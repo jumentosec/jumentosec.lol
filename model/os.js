@@ -14,7 +14,7 @@ import {
     DESCRIPTION_FP,
 } from '../helpers/os-data';
 
-class BabbevOS {
+class JumentOS {
     constructor() {
         this.borderlessTable = {
             border: getBorderCharacters('void'),
@@ -49,16 +49,12 @@ class BabbevOS {
     
     help = () => table(
         [
-            ['babbev.com', ''],
+            ['jumentosec.lol', ''],
             ['', ''],
             ['Usage:', ''],
             ['help', 'this message or help for a specific command'],
-            ['about', 'short about me, experience, cv'],
-            ['projects', 'projects I have worked on'],
-            ['books', 'my favorite books'],
-            ['contact', 'contact information'],
+            ['blog', 'read our community blog'],
             ['social', 'social media links'],
-            ['matrix', 'boot the matrix'],
             ['source', 'link to the source code of this app'],
         ],
         this.borderlessTable,
@@ -140,6 +136,8 @@ ${this.projectsHelpTable()}`;
     contact = () => table(CONTACT, this.borderlessTable);
     
     social = () => table(SOCIAL, this.borderlessTable);
+
+    blog = () => '\nhttps://blog.jumentosec.lol\n';
     
     source = () => `${SOURCE}\n`;
 
@@ -171,6 +169,8 @@ ${this.booksTable()}`;
                 return this.help();
             case 'about':
                 return this.about();
+            case 'blog':
+                return this.blog();                
             case 'projects':
                 return this.projects(command);
             case 'contact':
@@ -189,4 +189,4 @@ ${this.booksTable()}`;
     }
 }
 
-export default BabbevOS;
+export default JumentOS;
