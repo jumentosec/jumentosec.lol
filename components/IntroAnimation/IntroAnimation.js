@@ -6,7 +6,7 @@ import styles from "./IntroAnimation.module.css";
 export default function IntroAnimation({ fadeOutAfter = 100 }) {
     const [ isFaded, setIsFaded ] = useState(false);
 
-    const text = 'Booting...';
+    const text = 'provisioning instance...';
 
     useEffect(() => {
       setTimeout(() => {

@@ -11,10 +11,12 @@ export const GRAFITI_ARRAY = GRAFFITI.split('\n');
 export const INTRO_TEXT = [
   ...GRAFITI_ARRAY,
   'Welcome to JumentOS!',
-  'The JumentoSEC Operational System.',
+  'This is the Jumento Security Conferences Operational System.',
   '',
   '',
   'If it\'s your first access, respect our "policy".',
+  'Shell functions are disabled by default.',
+  '',
   'Type "help" to get started.',
   '',
 ];

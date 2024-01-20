@@ -170,7 +170,7 @@ ${this.booksTable()}`;
             case 'about':
                 return this.about();
             case 'blog':
-                return this.blog();                
+                return this.blog();
             case 'projects':
                 return this.projects(command);
             case 'contact':
