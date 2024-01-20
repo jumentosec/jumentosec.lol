@@ -6,10 +6,10 @@ import Terminal from '../components/Terminal/Terminal';
 import IntroAnimation from '../components/IntroAnimation/IntroAnimation';
 import { INTRO_TEXT } from '../helpers/consts';
 
-import BabbevOS from '../model/os';
+import JumentOS from '../model/os';
 
 export default function Page() {
-  const os = new BabbevOS();
+  const os = new JumentOS();
   const [displayIntroAnimation, setDisplayIntroAnimaion] = useState(true);
 
   const beginFadeOutAfter = 3000;
@@ -32,7 +32,7 @@ export default function Page() {
           <Terminal
             height='80vh'
             user='guest'
-            host='dumb-prod-1'
+            host='owned-prod-ws-1'
             commandHandler={commandHandler}
             introText={INTRO_TEXT} />
           }
