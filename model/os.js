@@ -137,7 +137,7 @@ ${this.projectsHelpTable()}`;
     
     social = () => table(SOCIAL, this.borderlessTable);
 
-    blog = () => '\nhttps://blog.jumentosec.lol\n';
+    blog = () => 'https://blog.jumentosec.lol\n';
     
     source = () => `${SOURCE}\n`;
 
