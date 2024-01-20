@@ -44,7 +44,7 @@ export const BOOKS = [
 
 export const SOCIAL = [
     ['GitHub', 'https://github.com/jumentosec/jumentosec.lol'],
-    ['Instagram', 'https://www.instagram.com/jumentosec.lol/'],
+    ['Instagram', 'https://www.instagram.com/jumentosec.lol'], 
 ];
 
 export const CONTACT = [
@@ -52,4 +52,4 @@ export const CONTACT = [
     ['Telegram', 'https://t.me/danbb_fp'],
 ];
 
-export const SOURCE = 'https://github.com/dannybabbev/babbev-com';
+export const SOURCE = 'https://github.com/jumentosec/jumentosec.lol';
