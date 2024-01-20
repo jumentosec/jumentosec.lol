@@ -1,0 +1,37 @@
+.container {
+    background-color: var(--background-color);
+    padding: 5px;
+    height: 500px; 
+    overflow-y: scroll; 
+    border-radius: 10px;
+}
+
+/* Scrollbar styles */
+.container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.outputLine {
+    height: 1rem;
+    white-space: pre;
+    margin: 2px 0 2px 0;
+}
+
+.outputText {
+    color: var(--terminal-font-color);
+    margin: 2px 0 2px 0;
+}
+
+.hiddenInput {
+    display: none;
+}
+

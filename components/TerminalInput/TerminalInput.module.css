@@ -1,0 +1,64 @@
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.terminalAccount {
+  color: var(--terminal-account);
+  font-weight: bold;
+}
+
+.terminalSeparator {
+  color: var(--terminal-font-color);
+}
+
+.terminalLine {
+  color: var(--terminal-path);
+}
+
+.terminalFontColor {
+  color: var(--terminal-font-color);
+}
+  
+
+.blinkingBox {
+  width: 10px;          /* Adjust width as per your preference */
+  height: 20px;         /* Adjust height to look like a cursor */
+  background-color: var(--terminal-font-color);  /* Ubuntu terminal-like green color */
+  float: right;
+}
+
+.systemInfoGroup {
+  display: inherit;
+}
+
+.blinking {
+  animation: blink 1s infinite;  /* Apply blinking animation */
+}
+
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+.hiddenTextArea {
+  background: transparent;
+  border: none;
+  color: transparent;
+  height: 16px;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-indent: -9999em;
+  white-space: pre;
+  width: 16px;
+  text-shadow: 0px 0px 0px;
+  caret-color: transparent;
+}
