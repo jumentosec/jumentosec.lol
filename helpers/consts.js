@@ -15,6 +15,8 @@ export const INTRO_TEXT = [
   '',
   '',
   'If it\'s your first access, respect our "policy".',
+  'Shell functions are disabled by default.',
+  '',
   'Type "help" to get started.',
   '',
 ];
